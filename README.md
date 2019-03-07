@@ -2,7 +2,7 @@
 
 ```
 renderTemplate(template, directive, {
-	regex = /{{\s*([^\s{}]+)\s*}}/g,
+  regex = /{{\s*([^\s{}]+)\s*}}/g,
 })
 ```
 
@@ -22,7 +22,7 @@ Access and change the default configuration.
 
 ```javascript
 let {
-	regex,
+  regex,
 } = renderTemplate;
 ```
 
@@ -50,10 +50,10 @@ import renderTemplate from '@seregpie/render-template';
 
 ```javascript
 let string = renderTemplate('Hello, {{ name }}. You have {{ unreadMessagesCount }} unread messages.', {
-	name: 'Alice',
-	unreadMessagesCount() {
-		return 1 + 1;
-	},
+  name: 'Alice',
+  unreadMessagesCount() {
+    return 1 + 1;
+  },
 });
 // => 'Hello, Alice. You have 2 unread messages.'
 ```
@@ -62,9 +62,9 @@ let string = renderTemplate('Hello, {{ name }}. You have {{ unreadMessagesCount 
 
 ```javascript
 let string = renderTemplate('My top three favorite fruits are {{ 0 }}, {{ 1 }} and {{ 2 }}.', [
-	'apples',
-	'bananas',
-	'oranges',
+  'apples',
+  'bananas',
+  'oranges',
 ]);
 // => 'My top three favorite fruits are apples, bananas and oranges.'
 ```
