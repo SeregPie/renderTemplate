@@ -1,0 +1,25 @@
+{
+	"name": "@seregpie/render-template",
+	"version": "1.0.0",
+	"description": "Renders a string template with the given directive.",
+	"keywords": [
+		"render",
+		"replace",
+		"string",
+		"template"
+	],
+	"license": "MIT",
+	"author": "Sergej Sintschilin <seregpie@gmail.com>",
+	"main": "renderTemplate.js",
+	"repository": "https://github.com/SeregPie/renderTemplate.git",
+	"scripts": {
+		"build": "rollup -c",
+		"prepublishOnly": "npm run build",
+		"test": "node test"
+	},
+	"devDependencies": {
+		"rollup": "^1.5.0",
+		"rollup-plugin-buble": "^0.19.6",
+		"rollup-plugin-terser": "^4.0.4"
+	}
+}
